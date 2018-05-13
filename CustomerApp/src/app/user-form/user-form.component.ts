@@ -29,7 +29,8 @@ export class UserFormComponent implements OnInit {
     this.maxDobDate.setFullYear(new Date().getFullYear() - 18);
   }
 
-  ngOnInit() {
+  ngOnInit() {    
+
     this.customerForm = new FormGroup({
 
       firstName: new FormControl('', [Validators.minLength(2), Validators.maxLength(20)]),

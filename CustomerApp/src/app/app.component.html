@@ -1,7 +1,16 @@
-<div class="jumbotron text-center">
-    <h1>Company</h1>
-    <p>We specialize in blablabla</p>
-</div>
-<div class="container">
-    <app-user-form class="container"></app-user-form>
+<ul class="nav nav-tabs">
+    <li class="active">
+        <a data-toggle="tab" href="#userList">User List</a>
+    </li>
+    <li>
+        <a data-toggle="tab" href="#newUser">New User</a>
+    </li>
+</ul>
+<div class="tab-content">
+    <div id="userList" class="tab-pane fade in active show">
+        <app-user-list></app-user-list>
+    </div>
+    <div id="newUser" class="tab-pane fade">
+        <app-user-form></app-user-form>
+    </div>
 </div>
